@@ -119,6 +119,7 @@ body {
 
 #primary-nav {
   margin: 30px 20px;
+ 
 }
 
 .container {
@@ -126,6 +127,7 @@ body {
 }
 
 .nav {
+ 
   width: 1200px;
   height: 60px;
   margin-left: 60px;
@@ -239,6 +241,10 @@ body {
   background-color: var(--clr-light-blue);
   border: none;
   border-radius: 5px;
+}
+.cinema-btn>a{
+  text-decoration: none;
+  color: var(--clr-white);
 }
 
 .cinema-btn:hover {
@@ -490,4 +496,142 @@ body {
 
 .nav-footer{
   margin-top:30px;
+}
+
+
+
+
+
+/***************************/
+/*  STYLE  JS-JSON  SEARCH */
+/***************************/
+
+.main{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 130px;
+  padding: 0 30px;
+}
+
+.product{
+  width: 200px;
+  display: flex;
+  
+  padding-bottom: 20px;
+}
+
+.product__img{
+  width: 150px;
+  height: 150px;
+}
+
+.block-product{
+  position: relative;
+  width: 160px;
+  height: 150px;
+  margin-left: 20px;
+  /* border: 1px solid red; */
+}
+
+.block-product h2{
+  width: 160px;
+  height: 35px;
+  margin: -1px;
+  font-size: 13px;
+  color: white;
+  /* border: 1px solid rgb(184, 181, 28); */
+}
+
+.block-product h2> a{
+  color: white;
+}
+
+.block-product p{
+  width: 160px;
+  height: 40px;
+ 
+  margin: 0;
+  font-weight: 100;
+  font-size: 1px;
+  /* line-height: 20px; */
+  color: #CFCFCF;
+  font-size: var(--sz-p-s);
+ padding-bottom: -10px;
+ /* border: 1px solid rgb(209, 209, 209); */
+ font-size: xx-small;
+}
+
+.edit-delete{
+  width: 160;
+  height: 33px;
+  /* border: 1px solid rgb(21, 255, 0); */
+}
+
+/* INPUT */
+
+
+#footer-search{
+  position: absolute;
+  width: 1380px;
+  height: 1000px;
+}
+
+#search{
+  width: 400px;
+  margin: 20px 0 20px 20px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid var(--clr-light-blue);
+  outline: none;
+}
+
+
+/*     CREATE    */
+
+#form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__inp{
+  width: 300px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 25px;
+  padding-left: 10px;
+}
+
+.form__btn{
+  width: 200px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: var(--clr-light-blue);
+  border: none;
+  border-radius: 100px;
+  margin-top: 20px;
+  color: var(--clr-white);
+  font-size: 16px;
+}
+
+.form__btn:hover{
+  color: var(--clr-dark-blue);
+}
+
+
+/*     EDIT  Редактирование   */
+
+.edit__link{
+  width: 100px;
+  height: 50px;
+  padding: 7px;
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: 9px;
+  background-color: var(--clr-light-blue);
+  border-radius: 30px;
+
+  /* border: 1px solid rgb(0, 255, 76); */
 }
