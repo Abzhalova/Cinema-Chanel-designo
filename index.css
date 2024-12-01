@@ -635,3 +635,25 @@ body {
 
   /* border: 1px solid rgb(0, 255, 76); */
 }
+
+.edit__link:hover{
+  color: var(--clr-dark-blue);
+}
+
+/*    Delete Удаление   */
+
+.delete__btn{
+  width: 70px;
+  height: 28px;
+  padding: 7px;
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: 9px;
+  background-color: var(--clr-light-blue);
+  border-radius: 30px;
+  border: none;
+}
+
+.delete__btn:hover{
+  color: var(--clr-dark-blue);
+}

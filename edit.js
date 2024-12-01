@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   editForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // input тагы значениелерди алып алабыз
+    // inputтагы значениелерди алып алабыз
     const newProduct = {  
       title: document.getElementById('title').value,
       description: document.getElementById('description').value,
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       img: document.getElementById('img').value
     };
    
-    await updateProduct(productId, newProduct); // Используем **productId**
+    await updateProduct(productId, newProduct); 
 
     window.location.href = 'index.html'
   });

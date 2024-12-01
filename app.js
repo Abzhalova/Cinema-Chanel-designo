@@ -22,7 +22,10 @@ function displayProducts(products){
            <div class="block-product">
               <h2 class='product__title'><a href="#">${product.title}</a></h2>
               <p class='product__price'>Film, ${product.price}  $</p>
-              <div class="edit-delete"><a href='edit.html?id=${product.id}' class="edit__link">Редактирование</a></div> 
+              <div class="edit-delete">
+                <a href='edit.html?id=${product.id}' class="edit__link">Редактирование</a>
+                <button class="delete__btn" onclick='deleteProduct(${product.id})'>Delete</button>
+              </div> 
               
               <p class='product__desc'>${product.description}</p>
              
@@ -33,8 +36,18 @@ function displayProducts(products){
     
 }
     
-fetchProduct()
 
+
+// Удалить продукт
+
+async function deleteProduct(id){
+   await fetch(`${API}/${id}`, {
+    method: 'DELETE'
+   })
+   fetchProduct()
+}
+  
+fetchProduct()
 
 // Добавить Button
 
@@ -68,6 +81,7 @@ async function addProduct(e) {
 
 }
     
+
 
 
 
